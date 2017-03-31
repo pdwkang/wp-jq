@@ -1,15 +1,20 @@
 var $ = jQuery;
 jQuery(document).ready(function() {
+	//////////////////////
+    ////  Home  Page  ////
+    //////////////////////	
 	// Home Menu Logo
 	$('#logo').html('<div class="logo-image-wrapper"><img class="logo-image" src="/wp-content/themes/IronSpirits2/js/georgia.png"/></div>')
 
-	// Green Wrapper around text in images
+	// Green Wrapper around text in carousel images
 	$('.home-slide-title').addClass('green-wrapper')
 	$('.introduction-content').prepend('<div class="philosophy-green"></div>')
 	$('.philosophy-green').html('OUR PHILOSOPHY <br/>Enjoy - the challenge of each opportunity <br/>Enhance - our skills as craftsmen <br/>Engage - our customers in the process <br/>Excel - in everyhing we create and deliver')
 	// Social Media section (#twitter)
 	// $('.section-description').html('')
 	// $('.section-header').html('')
+
+	// Social Media Section
 	var twitterHTML = ''
 	twitterHTML += '<div><h3 class="section-title twitter-title">CONNECT WITH US</h3></div>'
 	twitterHTML += "<div class='twitter-wrapper'>"
@@ -32,8 +37,6 @@ jQuery(document).ready(function() {
     jQuery('#twitter').html(twitterHTML);
 
 
-
-
 	// Client Section
 	var clientHTML = ''
 	clientHTML += '<div class="client-entire-wrapper">'
@@ -47,17 +50,12 @@ jQuery(document).ready(function() {
     jQuery('#clients').html(clientHTML);
 
 
-
-
-
-
 	// Contact Section
 	jQuery('.contact_map').insertAfter(jQuery("#contact .container .section-content"))
 	jQuery('#nf-form-1-cont').append(jQuery(".contact_map"))
 	jQuery('#mtscontact_submit').insertAfter(jQuery("#mtscontact_message"))
 
 	
-
 
 	//////////////////////
     //// Contact Page ////
@@ -70,25 +68,76 @@ jQuery(document).ready(function() {
     	addyHTML += '<div class="phone">Email:  ironspirits.info@gmail.com</div>'
     addyHTML += '</div>'
 	$('.contact-right').prepend(addyHTML)
+	var largerMap = '<a target="_blank" href="https://www.google.com/maps?v=2&f=q&ie=UTF8&t=m&iwloc&q=6020+Parkway+North+Drive,+Cumming,+GA,+United+States&z=13&source=embed">View Larger Map</a>'
+	$('.contact-right').append(largerMap)
+
+
 
 	///////////////////////
     //// Services Page ////
     ///////////////////////
     var serviceHTML = ''
     serviceHTML += '<div class="each-service-wrapper">'
-    	serviceHTML += '<div class="background-image"></div>'
-    	serviceHTML += '<div class="service-text">Service 1111</div>'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-left">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
+    serviceHTML += '</div>'
+    serviceHTML += '<div class="each-service-wrapper">'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-right">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
+    serviceHTML += '</div>'
+    serviceHTML += '<div class="each-service-wrapper">'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-left">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
+    serviceHTML += '</div>'
+    serviceHTML += '<div class="each-service-wrapper">'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-right">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
+    serviceHTML += '</div>'
+    serviceHTML += '<div class="each-service-wrapper">'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-left">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
+    serviceHTML += '</div>'
+    serviceHTML += '<div class="each-service-wrapper">'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-right">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
     serviceHTML += '</div>'
 
     $('#services-wrapper').html(serviceHTML)
 
 
-
-
-
-
-
-
+	
+	///////////////////////
+    ///// Process Page ////
+    ///////////////////////
+    var process1 = 'process1 <br/>process1 <br/>process1 <br/>process1 <br/>'
+    var process2 = 'process2 <br/>process2 <br/>process2 <br/>process2 <br/>'
+    var process3 = 'process3 <br/>process3 <br/>process3 <br/>process3 <br/>'
+    var process4 = 'process4 <br/>process4 <br/>process4 <br/>process4 <br/>'
+    var process5 = 'process5 <br/>process5 <br/>process5 <br/>process5 <br/>'
+    var process6 = 'process6 <br/>process6 <br/>process6 <br/>process6 <br/>'
+    
+    var processHTML = ''    
+    processHTML += '<div class="process-wrapper">'
+    	processHTML += '<div class="process-image-background">'
+    		processHTML += '<img src="/wp-content/themes/IronSpirits2/js/circle.png"/>'
+    		processHTML += '<div class="process-text"><img src="/wp-content/themes/IronSpirits2/js/tooltable.jpg"/></div>'
+    		// change text inside here
+    		processHTML += '<div class="process-text"></div>'
+    	processHTML += '</div>'
+    	processHTML += '<div class="process-tab process-1">1</div>'
+    	processHTML += '<div class="process-tab process-2">2</div>'
+    	processHTML += '<div class="process-tab process-3">3</div>'
+    	processHTML += '<div class="process-tab process-4">4</div>'
+    	processHTML += '<div class="process-tab process-5">5</div>'
+    	processHTML += '<div class="process-tab process-6">6</div>'
+    processHTML += '</div>'
+    $('body').on('click', '.process-1',function(){$('.process-text').html(process1)})
+    $('body').on('click', '.process-2',function(){$('.process-text').html(process2)})
+    $('body').on('click', '.process-3',function(){$('.process-text').html(process3)})
+    $('body').on('click', '.process-4',function(){$('.process-text').html(process4)})
+    $('body').on('click', '.process-5',function(){$('.process-text').html(process5)})
+    $('body').on('click', '.process-6',function(){$('.process-text').html(process6)})
+    $('#process-wrapper').html(processHTML)
 
 })
 

@@ -342,7 +342,7 @@ body{
 .contact-wrapperz{
 	position: relative;
 	width: 100%;
-	min-height: 900px;
+	min-height: 1400px;
 }
 .contact-left{
 	position: absolute;
@@ -367,10 +367,96 @@ body{
 /* Service Page */
 .each-service-wrapper{
 	width:100%;
-	background-color: blue;
+	position: relative;
+	height:400px;
+	overflow: hidden;
 }
 
 #post-244 .post-content{
 	padding-left:0;
 	padding-right: 0;
+}
+
+.service-text-left{
+	position: absolute;
+	left:100px;
+	top:0;
+	height:400px;
+	width:280px;
+	background-color: rgba(100,200,100,.8);
+	color:white;
+}
+.service-text-right{
+	position: absolute;
+	right:100px;
+	top:0;
+	height:400px;
+	width:280px;
+	background-color: rgba(100,200,100,.8);
+	color:white;
+}
+
+
+
+/* Process Page */
+.process-wrapper{
+	width:1000px;
+	height:700px;
+	background-color: blue;
+	position: relative;
+	margin:auto;
+}
+
+.process-image-background{
+	position: absolute;
+	width:500px;
+	height:400px;
+	/* background-color: green; */
+	left:250px;
+	top:100px;
+
+}
+.process-text{
+	position: absolute;
+	text-align: center;
+	top:100px;
+	left:0;
+	/* margin-left: 0; */
+	/* margin-right: 0; */
+	width:100%;
+}
+.process-tab{
+	position: absolute;
+	width:50px;
+	height: 50px;
+	background-color: white;
+}
+.process-1{
+	top: 400px;
+	left: 100px;
+}
+
+.process-2{
+	top: 500px;
+	left: 180px;
+}
+
+.process-3{
+	top: 600px;
+	left: 300px;
+}
+
+.process-4{
+	top: 600px;
+	right: 300px;
+}
+
+.process-5{
+	top: 500px;
+	right: 180px;
+}
+
+.process-6{
+	top: 400px;
+	right: 100px;
 }
