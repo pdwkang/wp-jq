@@ -112,7 +112,7 @@ dd {
 body {
     font: 15px/25px Noto Sans, sans-serif;
     color: #888888;
-    background-color: #fbfbfb;
+    background-color: white;
 }
 ::-moz-selection {
     background: #222;

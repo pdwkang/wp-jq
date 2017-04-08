@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     ////  Home  Page  ////
     //////////////////////	
 	// Home Menu Logo
-	$('#logo').html('<div class="logo-image-wrapper"><img class="logo-image" src="/wp-content/themes/IronSpirits2/js/georgia.png"/></div>')
+	$('#logo').html('<div class="logo-image-wrapper"><img class="logo-image" src="/wp-content/themes/IronSpirits2/images/is-logo.png"/></div>')
 
 	// Green Wrapper around text in carousel images
 	$('.home-slide-title').addClass('green-wrapper')
@@ -13,6 +13,16 @@ jQuery(document).ready(function() {
 	// Social Media section (#twitter)
 	// $('.section-description').html('')
 	// $('.section-header').html('')
+
+
+	// Add icons on front page to each section
+	$('.logo1').html('<img src="/wp-content/themes/IronSpirits2/images/themed.jpg"/>')
+	$('.logo2').html('<img src="/wp-content/themes/IronSpirits2/images/signage.jpg"/>')
+	$('.logo3').html('<img src="/wp-content/themes/IronSpirits2/images/props.jpg"/>')
+	$('.logo4').html('<img src="/wp-content/themes/IronSpirits2/images/murals.jpg"/>')
+	$('.logo5').html('<img src="/wp-content/themes/IronSpirits2/images/sculpture.jpg"/>')
+	$('.logo6').html('<img src="/wp-content/themes/IronSpirits2/images/design.jpg"/>')
+
 
 	// Social Media Section
 	var twitterHTML = ''
@@ -42,9 +52,9 @@ jQuery(document).ready(function() {
 	clientHTML += '<div class="client-entire-wrapper">'
 		clientHTML += '<h3 class="section-title">BRANDS WE WORKED WITH</h3>'
 		clientHTML += "<div class='client-wrapper'>"
-			clientHTML += "<div class='each-client'> <a target='_blank' href='http://mellowmushroom.com/'><img class='client-img' src='http://pauldkang.com/is/static/media/mellowMushroom.ec2f6942.jpg' /> </a></div>"
-			clientHTML += "<div class='each-client'> <a href='http://www.michelinman.com/US/en/homepage.html' target='_blank'><img class='client-img' src='http://www.dewebsite.org/logo/michelin/michelin_logo.gif' /> </a></div>"
-			clientHTML += "<div class='each-client'> <a href='http://northpoint.org/' target='_blank'><img class='client-img' src='http://pauldkang.com/is/static/media/church.16a4367e.jpg' /> </a></div>"
+			clientHTML += "<div class='each-client'> <a target='_blank' href='http://mellowmushroom.com/'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/mellowMushroom.jpg'/> </a></div>"
+			clientHTML += "<div class='each-client'> <a href='http://www.michelinman.com/US/en/homepage.html' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/michelin.jpg' /> </a></div>"
+			clientHTML += "<div class='each-client'> <a href='http://northpoint.org/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/church.jpg'/> </a></div>"
 		clientHTML += '</div>'
 	clientHTML += '</div>'
     jQuery('#clients').html(clientHTML);
@@ -79,6 +89,10 @@ jQuery(document).ready(function() {
     var serviceHTML = ''
     serviceHTML += '<div class="each-service-wrapper">'
     	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
+    	serviceHTML += '<div class="service-text-right">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
+    serviceHTML += '</div>'
+        serviceHTML += '<div class="each-service-wrapper">'
+    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
     	serviceHTML += '<div class="service-text-left">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
     serviceHTML += '</div>'
     serviceHTML += '<div class="each-service-wrapper">'
@@ -96,10 +110,6 @@ jQuery(document).ready(function() {
     serviceHTML += '<div class="each-service-wrapper">'
     	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
     	serviceHTML += '<div class="service-text-left">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
-    serviceHTML += '</div>'
-    serviceHTML += '<div class="each-service-wrapper">'
-    	serviceHTML += '<div class="background-image"><img src="/wp-content/themes/IronSpirits2/js/placeholder.jpg"/></div>'
-    	serviceHTML += '<div class="service-text-right">Service 1111<br/>Service 1111<br/>Service 1111<br/>Service 1111<br/></div>'
     serviceHTML += '</div>'
 
     $('#services-wrapper').html(serviceHTML)
@@ -109,35 +119,47 @@ jQuery(document).ready(function() {
 	///////////////////////
     ///// Process Page ////
     ///////////////////////
-    var process1 = 'process1 <br/>process1 <br/>process1 <br/>process1 <br/>'
-    var process2 = 'process2 <br/>process2 <br/>process2 <br/>process2 <br/>'
-    var process3 = 'process3 <br/>process3 <br/>process3 <br/>process3 <br/>'
-    var process4 = 'process4 <br/>process4 <br/>process4 <br/>process4 <br/>'
-    var process5 = 'process5 <br/>process5 <br/>process5 <br/>process5 <br/>'
-    var process6 = 'process6 <br/>process6 <br/>process6 <br/>process6 <br/>'
+    var process1 = '<div class="process1-text"><h2 class="process-text-title">Client Collaboration</h2><div class="process-actual-text">After contacting us, we will meet with you at your site to discuss initial thoughts and needs.  In most cases, we will take photos and provide real-time sketches as well as initial 2D art during our time together.  This is a time where we listen to your vision, your values, your limitations, and your contingencies so that we can begin to create a solution from a depth of artistic offerings.  This process normally takes 1 – to – 2 days dependent on site size and involves our Creative Director.</div>'
+    var process2 = '<div class="process2-text"><h2 class="process-text-title">Conceptual Desgin</h2><div class="process-actual-text">With the input garnered from the consultation, our creative team begins develop your vision by determining initial design elements, themes, and specialty nuances.  Rough concepts from sketches – to 2D – to 3D – renderings are presented dependent upon your design budget.  This is the time where you have the chance to see your vision on paper and determine what works and what does not work.  This process can take 2 days – to – 2 weeks dependent upon the level of design finish and involves our Creative Director and Creative Engineer.</div></div>'
+    var process3 = '<div class="process3-text"><h2 class="process-text-title">Final Design</h2><div class="process-actual-text">Taking your changes, our designers build the final representation of your environment.  Color, measurements, materials, time constraints, and costs are all incorporated into a deliverable which will serve as a guiding document for production and fabrication.  This process can take 2-3 weeks and involves our Creative Director, Creative Engineer, and Operations Director.</div></div>'
+    var process4 = '<div class="process4-text"><h2 class="process-text-title">Production and Fabrication</h2><div class="process-actual-text">Upon sign-off of final design and your production contract, all your project components move into the production and fabrication queue of engineering, carpentry, sculpture, welding and finish.  Installation preparation also begins as we plan the final step of bringing your project to your site.  This process can take 6 weeks – to – 6 months dependent upon project size and involves our Creative Engineer, Production Director, Production Crew, and Installation Director.</div></div>'
+    var process5 = '<div class="process5-text"><h2 class="process-text-title">Installation</h2><div class="process-actual-text">We have been stewards of your project and have seen things begin to take shape up until this point in time; however, now you see the work come to completion.  Our hard working install team takes all the components of your project and brings your space to life.  Care is placed on comprehensive safety checks, high quality finish, real time spatial alignment, and incorporated client feedback.  This process can take 2 days – to – 2 weeks and involves our Creative Director, Production Director, Installation Director, and Install Crew.</div></div>'
+    var process6 = '<div class="process6-text"><h2 class="process-text-title">Quality Assurance</h2><div class="process-actual-text">Our core values are craftsmanship, stewardship, and client collaboration.  This step in our process manifests those values by giving us the chance to receive feedback on improvements, perform safety checks and repairs, compare before and after expectations and, in most cases, plan next steps for future work.  This process is ongoing with a 1 day visit within 2 months of install date and involves our Creative Director and Operations Director.</div></div>'
     
     var processHTML = ''    
     processHTML += '<div class="process-wrapper">'
     	processHTML += '<div class="process-image-background">'
-    		processHTML += '<img src="/wp-content/themes/IronSpirits2/js/circle.png"/>'
-    		processHTML += '<div class="process-text"><img src="/wp-content/themes/IronSpirits2/js/tooltable.jpg"/></div>'
-    		// change text inside here
-    		processHTML += '<div class="process-text"></div>'
+    		processHTML += '<img class="process-actual-image" src="/wp-content/themes/IronSpirits2/images/process-bg.png"/>'
+    		processHTML += '<div class="process-text"><img class="fade-from-left" src="/wp-content/themes/IronSpirits2/images/anvil.png"/></div>'
     	processHTML += '</div>'
-    	processHTML += '<div class="process-tab process-1">1</div>'
-    	processHTML += '<div class="process-tab process-2">2</div>'
-    	processHTML += '<div class="process-tab process-3">3</div>'
-    	processHTML += '<div class="process-tab process-4">4</div>'
-    	processHTML += '<div class="process-tab process-5">5</div>'
-    	processHTML += '<div class="process-tab process-6">6</div>'
+    	processHTML += '<div class="process-tab process-1"><img src="/wp-content/themes/IronSpirits2/images/process-1.png"/></div>'
+    	processHTML += '<div class="process-tab process-2"><img src="/wp-content/themes/IronSpirits2/images/process-2.png"/></div>'
+    	processHTML += '<div class="process-tab process-3"><img src="/wp-content/themes/IronSpirits2/images/process-3.png"/></div>'
+    	processHTML += '<div class="process-tab process-4"><img src="/wp-content/themes/IronSpirits2/images/process-4.png"/></div>'
+    	processHTML += '<div class="process-tab process-5"><img src="/wp-content/themes/IronSpirits2/images/process-5.png"/></div>'
+    	processHTML += '<div class="process-tab process-6"><img src="/wp-content/themes/IronSpirits2/images/process-6.png"/></div>'
     processHTML += '</div>'
-    $('body').on('click', '.process-1',function(){$('.process-text').html(process1)})
-    $('body').on('click', '.process-2',function(){$('.process-text').html(process2)})
-    $('body').on('click', '.process-3',function(){$('.process-text').html(process3)})
-    $('body').on('click', '.process-4',function(){$('.process-text').html(process4)})
-    $('body').on('click', '.process-5',function(){$('.process-text').html(process5)})
-    $('body').on('click', '.process-6',function(){$('.process-text').html(process6)})
+    $('body').on('click', '.process-1',function(){$('.process-text').hide().fadeIn(1400).html(process1); $('.process-tab').removeClass('active-process'); $(this).addClass('active-process'); $('.process-actual-image').rotate(-105)}) //105 //465
+    $('body').on('click', '.process-2',function(){$('.process-text').hide().fadeIn(1400).html(process2); $('.process-tab').removeClass('active-process'); $(this).addClass('active-process'); $('.process-actual-image').rotate(-127)}) //127 //487
+    $('body').on('click', '.process-3',function(){$('.process-text').hide().fadeIn(1400).html(process3); $('.process-tab').removeClass('active-process'); $(this).addClass('active-process'); $('.process-actual-image').rotate(-153)}) //153 //513
+    $('body').on('click', '.process-4',function(){$('.process-text').hide().fadeIn(1400).html(process4); $('.process-tab').removeClass('active-process'); $(this).addClass('active-process'); $('.process-actual-image').rotate(-212)}) //212 //572
+    $('body').on('click', '.process-5',function(){$('.process-text').hide().fadeIn(1400).html(process5); $('.process-tab').removeClass('active-process'); $(this).addClass('active-process'); $('.process-actual-image').rotate(-236)}) //236 //596
+    $('body').on('click', '.process-6',function(){$('.process-text').hide().fadeIn(1400).html(process6); $('.process-tab').removeClass('active-process'); $(this).addClass('active-process'); $('.process-actual-image').rotate(-258)}) //258 //618
     $('#process-wrapper').html(processHTML)
+
+
+    // rotate background in process page
+    var rotation = 0;
+
+	jQuery.fn.rotate = function(degrees) {
+	    $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+	                 '-moz-transform' : 'rotate('+ degrees +'deg)',
+	                 '-ms-transform' : 'rotate('+ degrees +'deg)',
+	                 'transform' : 'rotate('+ degrees +'deg)',
+	                 'transition' : 'transform 1s'
+	             });
+	    return $(this);
+	};
 
 })
 
