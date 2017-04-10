@@ -167,7 +167,6 @@ body{
 	height: 150px;
 	background-color: $my-green2;
 	line-height: 150px;
-	/* font-size: 30px; */
 }
 
 .home-slide-title.green-wrapper{
@@ -202,7 +201,10 @@ body{
 .owl-stage-outer{
     width:  100%;
 }
+.home-slide:after{
+	background-color: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 
+}
 
 
 
