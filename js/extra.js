@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     ////  Home  Page  ////
     //////////////////////	
 	// Home Menu Logo
-	$('#logo').html('<div class="logo-image-wrapper"><img class="logo-image" src="/wp-content/themes/IronSpirits2/images/is-logo.png"/></div>')
+	$('body').prepend('<div class="logo-image-wrapper"><img class="logo-image" src="/wp-content/themes/IronSpirits2/images/is-logo.png"/></div>')
 
 	// Green Wrapper around text in carousel images
 	$('.home-slide-title').addClass('green-wrapper')

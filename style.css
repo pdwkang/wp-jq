@@ -1,96 +1,99 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("/wp-content/themes/IronSpirits2/fonts/Myriad_Pro_Regular.ttf");
+}
+@font-face {
+  font-family: "Myriad Pro Italic";
+  src: url("/wp-content/themes/IronSpirits2/fonts/Myriad_Pro_Italic.ttf");
+}
+@font-face {
+  font-family: "Myriad Pro Bold";
+  src: url("/wp-content/themes/IronSpirits2/fonts/MyriadPro-Bold.otf");
+}
+@font-face {
+  font-family: "Myriad Pro Light";
+  src: url("/wp-content/themes/IronSpirits2/fonts/MyriadPro-Light.otf");
+}
 /* CUSTOM CSS */
-/* line 8, compass/sass/style.scss */
+/* line 12, compass/sass/style.scss */
 body {
   padding-left: 7% !important;
   padding-right: 7% !important;
   background-color: white;
   padding-top: 32px;
+  font-family: 'Myriad Pro Light' !important;
 }
 
-/* logo */
-/* line 17, compass/sass/style.scss */
+/* line 19, compass/sass/style.scss */
+h1, h2, h3, h4, h5, h6, a, body {
+  letter-spacing: .5px;
+}
+
+/* line 22, compass/sass/style.scss */
+h2 {
+  font-family: 'Myriad Pro Regular' !important;
+}
+
+/* line 25, compass/sass/style.scss */
+h3 {
+  font-family: 'Myriad Pro Regular' !important;
+  letter-spacing: .5px !important;
+}
+
+/* line 29, compass/sass/style.scss */
+h4, h5, h6 {
+  font-family: 'Myriad Pro Italic' !important;
+}
+
+/* line 30, compass/sass/style.scss */
+a {
+  font-family: 'Myriad Pro Regular' !important;
+}
+
+/* line 31, compass/sass/style.scss */
+.section-description {
+  font-family: 'Myriad Pro Italic' !important;
+}
+
+/* line 35, compass/sass/style.scss */
 #logo {
-  /* display: none; */
+  display: none !important;
 }
 
-/* line 20, compass/sass/style.scss */
-.logo-image {
-  display: none;
-}
-
-/* line 23, compass/sass/style.scss */
+/* line 40, compass/sass/style.scss */
 .logo-image-wrapper {
   /* display: none; */
-  width: 350px;
+  z-index: 1001;
+  position: fixed;
+  left: 0;
+  top: 40px;
+  width: 400px;
 }
 
-/* line 27, compass/sass/style.scss */
+/* line 51, compass/sass/style.scss */
 .main-header {
   background-color: #fdfdfd;
   box-shadow: none;
 }
 
-@media (min-width: 867px) {
-  /* line 32, compass/sass/style.scss */
-  #logo {
-    position: relative;
-    display: block;
-    /* left: 0; */
-    /* top: 50px; */
-    /* z-index: 10001; */
-  }
-
-  /* line 40, compass/sass/style.scss */
-  .logo-image {
-    display: block;
-    background-color: #fdfdfd;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    border-radius: 5%;
-    padding: 0 20px 20px 20px;
-  }
+/* line 68, compass/sass/style.scss */
+.logo-image {
+  padding: 0 50px 20px 50px;
 }
+
 @media (max-width: 866px) {
-  /* line 55, compass/sass/style.scss */
-  #logo-wrapper {
+  /* line 83, compass/sass/style.scss */
+  .logo-image-wrapper {
     display: none;
   }
 }
 /* nav bar */
 /* shrinking */
-/* line 62, compass/sass/style.scss */
-.shrink1 {
-  position: fixed !important;
-  top: 15px !important;
-  left: 0 !important;
-  width: 100% !important;
-  z-index: 1000 !important;
-  -webkit-backface-visibility: hidden !important;
-  height: 70px;
-}
-
-/* line 71, compass/sass/style.scss */
+/* line 99, compass/sass/style.scss */
 #navigation ul.menu ul {
   top: 60px;
   width: 170px;
-}
-
-/* line 75, compass/sass/style.scss */
-.admin-bar .shrink1 {
-  top: 32px;
-}
-
-/* line 78, compass/sass/style.scss */
-.place-hold-nav-wp {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  height: 32px;
-  background-color: #23282D;
+  font-family: "Myriad_Pro_Regular";
 }
 
 /* .entry-header{display: none !important;} */
@@ -109,14 +112,14 @@ body {
 /* #menu-item-516{width:13%;text-align:center;} */
 /* contact */
 /* #menu-item-637{width:13%;text-align:center;} */
-/* line 108, compass/sass/style.scss */
+/* line 137, compass/sass/style.scss */
 .features-logo {
   display: inline-block;
   width: 50px;
   height: 50px;
   position: relative;
 }
-/* line 114, compass/sass/style.scss */
+/* line 143, compass/sass/style.scss */
 .features-logo img {
   position: absolute;
   top: 25px;
@@ -124,44 +127,44 @@ body {
   width: 45px;
   height: 45px;
 }
-/* line 123, compass/sass/style.scss */
+/* line 152, compass/sass/style.scss */
 .features-logo:hover img {
   transform: rotateY(360deg);
   transition: transform .8s;
 }
 
-/* line 131, compass/sass/style.scss */
+/* line 160, compass/sass/style.scss */
 .home-slide {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 135, compass/sass/style.scss */
+/* line 164, compass/sass/style.scss */
 .green-wrapper {
   height: 150px;
-  background-color: rgba(154, 217, 89, 0.93);
+  background-color: rgba(130, 188, 0, 0.93);
   line-height: 150px;
 }
 
-/* line 141, compass/sass/style.scss */
+/* line 170, compass/sass/style.scss */
 .home-slide-title.green-wrapper {
   font-size: 36px;
 }
 
 /* owl carousel css */
-/* line 146, compass/sass/style.scss */
+/* line 175, compass/sass/style.scss */
 .separator span {
   display: none !important;
 }
 
-/* line 150, compass/sass/style.scss */
+/* line 179, compass/sass/style.scss */
 .services.carousel.owl-carousel.owl-theme.owl-loaded {
   width: 100%;
   /* margin: 0; */
   /* padding: 0; */
 }
 
-/* line 156, compass/sass/style.scss */
+/* line 185, compass/sass/style.scss */
 #services .container {
   padding: 0 !important;
   margin: 0 !important;
@@ -169,26 +172,26 @@ body {
   max-width: 100%;
 }
 
-/* line 163, compass/sass/style.scss */
+/* line 192, compass/sass/style.scss */
 .owl-stage-outer {
   width: 100%;
 }
 
-/* line 166, compass/sass/style.scss */
+/* line 195, compass/sass/style.scss */
 .home-slide:after {
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 /* social media links */
-/* line 177, compass/sass/style.scss */
+/* line 206, compass/sass/style.scss */
 .twitter-title {
   margin-bottom: 100px;
-  background-color: rgba(154, 217, 89, 0.93);
+  background-color: rgba(130, 188, 0, 0.93);
   height: 140px;
   line-height: 140px;
 }
 
-/* line 183, compass/sass/style.scss */
+/* line 212, compass/sass/style.scss */
 .each-logo1 {
   margin-top: 100px;
   width: 80px;
@@ -197,36 +200,36 @@ body {
   margin-bottom: 50px;
 }
 
-/* line 190, compass/sass/style.scss */
+/* line 219, compass/sass/style.scss */
 .each-logo1:hover {
   filter: brightness(30%);
   transition: filter 0.3s;
 }
 
-/* line 195, compass/sass/style.scss */
+/* line 224, compass/sass/style.scss */
 .aa {
   animation: bounceIcons 1.2s infinite linear;
 }
 
-/* line 196, compass/sass/style.scss */
+/* line 225, compass/sass/style.scss */
 .bb {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .1s;
 }
 
-/* line 197, compass/sass/style.scss */
+/* line 226, compass/sass/style.scss */
 .cc {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .2s;
 }
 
-/* line 198, compass/sass/style.scss */
+/* line 227, compass/sass/style.scss */
 .dd {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .3s;
 }
 
-/* line 199, compass/sass/style.scss */
+/* line 228, compass/sass/style.scss */
 .ee {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .4s;
@@ -247,36 +250,35 @@ body {
   }
 }
 /* client css */
-/* line 212, compass/sass/style.scss */
+/* line 241, compass/sass/style.scss */
 .client-entire-wrapper {
   margin-top: 50px;
 }
 
-/* line 213, compass/sass/style.scss */
+/* line 242, compass/sass/style.scss */
 .client-wrapper {
   margin: auto;
   text-align: center;
 }
 
-/* line 217, compass/sass/style.scss */
+/* line 246, compass/sass/style.scss */
 .each-client {
   display: inline-block;
   margin-top: 30px;
 }
 
-/* line 221, compass/sass/style.scss */
+/* line 250, compass/sass/style.scss */
 .client-img {
-  border-radius: 50%;
   padding: 25px;
   height: 200px !important;
   width: 200px !important;
   margin: 40px;
   margin-bottom: 30px;
-  background-color: rgba(154, 217, 89, 0.93);
-  border: 5px solid #9ad959;
+  background-color: rgba(130, 188, 0, 0.93);
+  border: 5px solid #82bc00;
 }
 
-/* line 231, compass/sass/style.scss */
+/* line 260, compass/sass/style.scss */
 .client-img:hover {
   /* // filter:invert(90%); */
   filter: brightness(50%);
@@ -285,12 +287,12 @@ body {
 }
 
 /* contact css */
-/* line 247, compass/sass/style.scss */
+/* line 276, compass/sass/style.scss */
 #contact .container {
   max-width: 100%;
 }
 
-/* line 250, compass/sass/style.scss */
+/* line 279, compass/sass/style.scss */
 #contact .container .section-content {
   /* position: absolute; */
   display: inline-block;
@@ -300,7 +302,7 @@ body {
   /* top: 100px; */
 }
 
-/* line 258, compass/sass/style.scss */
+/* line 287, compass/sass/style.scss */
 .contact_map {
   /* position: absolute; */
   display: inline-block;
@@ -311,28 +313,28 @@ body {
   /* top: 100px; */
 }
 
-/* line 267, compass/sass/style.scss */
+/* line 296, compass/sass/style.scss */
 #map-canvas {
   height: 543px !important;
 }
 
-/* line 271, compass/sass/style.scss */
+/* line 300, compass/sass/style.scss */
 #contact .contact-form-inputs-col {
   width: 100% !important;
 }
 
-/* line 274, compass/sass/style.scss */
+/* line 303, compass/sass/style.scss */
 #contact .contact-form-inputs-col.contact-form-inputs-col-2 {
   padding-left: 0 !important;
   padding-right: 10px !important;
 }
 
-/* line 278, compass/sass/style.scss */
+/* line 307, compass/sass/style.scss */
 #contact .section-description {
   margin-bottom: 50px !important;
 }
 
-/* line 281, compass/sass/style.scss */
+/* line 310, compass/sass/style.scss */
 #mtscontact_form {
   margin-top: -10px !important;
 }
@@ -342,14 +344,14 @@ body {
 /* background-color:rgba(100,200,100,.7); */
 /* width: 50%; */
 /* } */
-/* line 300, compass/sass/style.scss */
+/* line 329, compass/sass/style.scss */
 #introduction {
   position: relative;
   overflow: hidden;
   height: 50vh;
 }
 
-/* line 305, compass/sass/style.scss */
+/* line 334, compass/sass/style.scss */
 .philosophy-green {
   position: absolute;
   top: 0;
@@ -358,48 +360,48 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
-  background-color: rgba(154, 217, 89, 0.93);
+  background-color: rgba(130, 188, 0, 0.93);
   width: 400px;
   font-size: 30px;
 }
 
 /* Values */
-/* line 321, compass/sass/style.scss */
+/* line 350, compass/sass/style.scss */
 .img-container {
   border-radius: 0;
 }
 
-/* line 324, compass/sass/style.scss */
+/* line 353, compass/sass/style.scss */
 .owl-lazy {
-  border: 5px solid green;
+  border: 5px solid rgba(130, 188, 0, 0.93);
   padding: 4px;
 }
 
-/* line 328, compass/sass/style.scss */
+/* line 357, compass/sass/style.scss */
 #introduction .section-description, #introduction .section-title {
   color: transparent;
 }
 
-/* line 332, compass/sass/style.scss */
+/* line 361, compass/sass/style.scss */
 #services .grid-box-inner {
   padding: 50px 25px 40px 25px;
 }
 
-/* line 335, compass/sass/style.scss */
+/* line 364, compass/sass/style.scss */
 #services .grid-box-inner:hover {
-  background-color: rgba(154, 217, 89, 0.4);
+  background-color: rgba(130, 188, 0, 0.4);
   color: black;
 }
 
 /* Contact Page */
-/* line 352, compass/sass/style.scss */
+/* line 381, compass/sass/style.scss */
 .contact-wrapperz {
   position: relative;
   width: 100%;
   min-height: 1400px;
 }
 
-/* line 357, compass/sass/style.scss */
+/* line 386, compass/sass/style.scss */
 .contact-left {
   position: absolute;
   top: 80px;
@@ -408,7 +410,7 @@ body {
   display: inline-block;
 }
 
-/* line 364, compass/sass/style.scss */
+/* line 393, compass/sass/style.scss */
 .contact-right {
   position: absolute;
   vertical-align: top;
@@ -420,7 +422,7 @@ body {
 }
 
 /* Service Page */
-/* line 378, compass/sass/style.scss */
+/* line 407, compass/sass/style.scss */
 .each-service-wrapper {
   width: 100%;
   position: relative;
@@ -428,36 +430,36 @@ body {
   overflow: hidden;
 }
 
-/* line 385, compass/sass/style.scss */
+/* line 414, compass/sass/style.scss */
 #post-244 .post-content {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 390, compass/sass/style.scss */
+/* line 419, compass/sass/style.scss */
 .service-text-left {
   position: absolute;
   left: 100px;
   top: 0;
   height: 400px;
   width: 280px;
-  background-color: rgba(154, 217, 89, 0.93);
+  background-color: rgba(130, 188, 0, 0.93);
   color: white;
 }
 
-/* line 399, compass/sass/style.scss */
+/* line 428, compass/sass/style.scss */
 .service-text-right {
   position: absolute;
   right: 100px;
   top: 0;
   height: 400px;
   width: 280px;
-  background-color: rgba(154, 217, 89, 0.93);
+  background-color: rgba(130, 188, 0, 0.93);
   color: white;
 }
 
 /* Process Page */
-/* line 412, compass/sass/style.scss */
+/* line 441, compass/sass/style.scss */
 .process-wrapper {
   width: 800px;
   height: 700px;
@@ -465,7 +467,7 @@ body {
   margin: auto;
 }
 
-/* line 420, compass/sass/style.scss */
+/* line 449, compass/sass/style.scss */
 .process-image-background {
   position: absolute;
   width: 600px;
@@ -474,12 +476,12 @@ body {
   left: 100px;
   top: 50px;
 }
-/* line 427, compass/sass/style.scss */
+/* line 456, compass/sass/style.scss */
 .process-image-background img {
   filter: brightness(125%);
 }
 
-/* line 430, compass/sass/style.scss */
+/* line 459, compass/sass/style.scss */
 .process-text {
   position: absolute;
   text-align: center;
@@ -487,129 +489,131 @@ body {
   left: 0;
   width: 100%;
 }
-/* line 436, compass/sass/style.scss */
+/* line 465, compass/sass/style.scss */
 .process-text .process-actual-text {
   color: #282828;
 }
-/* line 440, compass/sass/style.scss */
+/* line 469, compass/sass/style.scss */
 .process-text .process1-text .process-text-title {
   padding: 40px 0 0 50px;
 }
-/* line 441, compass/sass/style.scss */
+/* line 470, compass/sass/style.scss */
 .process-text .process1-text .process-actual-text {
   padding: 10px 80px 0px 140px;
 }
-/* line 444, compass/sass/style.scss */
+/* line 473, compass/sass/style.scss */
 .process-text .process2-text .process-text-title {
   padding: 5px 0 0 30px;
 }
-/* line 445, compass/sass/style.scss */
+/* line 474, compass/sass/style.scss */
 .process-text .process2-text .process-actual-text {
   padding: 10px 90px 0px 140px;
 }
-/* line 448, compass/sass/style.scss */
+/* line 477, compass/sass/style.scss */
 .process-text .process3-text .process-text-title {
   padding: 30px 0 0 30px;
 }
-/* line 449, compass/sass/style.scss */
+/* line 478, compass/sass/style.scss */
 .process-text .process3-text .process-actual-text {
   padding: 10px 100px 0px 130px;
 }
-/* line 452, compass/sass/style.scss */
+/* line 481, compass/sass/style.scss */
 .process-text .process4-text .process-text-title {
   padding: 20px 40px 0 0;
 }
-/* line 453, compass/sass/style.scss */
+/* line 482, compass/sass/style.scss */
 .process-text .process4-text .process-actual-text {
   padding: 10px 140px 0px 100px;
 }
-/* line 456, compass/sass/style.scss */
+/* line 485, compass/sass/style.scss */
 .process-text .process5-text .process-text-title {
   padding: 10px 50px 0 0;
 }
-/* line 457, compass/sass/style.scss */
+/* line 486, compass/sass/style.scss */
 .process-text .process5-text .process-actual-text {
   padding: 10px 150px 0px 95px;
 }
-/* line 460, compass/sass/style.scss */
+/* line 489, compass/sass/style.scss */
 .process-text .process6-text .process-text-title {
   padding: 50px 50px 0 0;
 }
-/* line 461, compass/sass/style.scss */
+/* line 490, compass/sass/style.scss */
 .process-text .process6-text .process-actual-text {
   padding: 10px 150px 0px 90px;
 }
-/* line 463, compass/sass/style.scss */
+/* line 492, compass/sass/style.scss */
 .process-text img {
   margin-top: -100px;
 }
 
-/* line 468, compass/sass/style.scss */
-.process-tab {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-}
-/* line 473, compass/sass/style.scss */
-.process-tab:hover {
-  cursor: pointer;
-}
-/* line 476, compass/sass/style.scss */
-.process-tab img {
-  filter: brightness(103%);
-}
-
-/* line 480, compass/sass/style.scss */
+/* line 498, compass/sass/style.scss */
 .process-1 {
   top: 400px;
   left: 10px;
 }
 
-/* line 481, compass/sass/style.scss */
+/* line 499, compass/sass/style.scss */
 .process-2 {
   top: 530px;
   left: 70px;
 }
 
-/* line 482, compass/sass/style.scss */
+/* line 500, compass/sass/style.scss */
 .process-3 {
   top: 630px;
   left: 200px;
 }
 
-/* line 483, compass/sass/style.scss */
+/* line 501, compass/sass/style.scss */
 .process-4 {
   top: 630px;
-  right: 180px;
+  right: 160px;
 }
 
-/* line 484, compass/sass/style.scss */
+/* line 502, compass/sass/style.scss */
 .process-5 {
   top: 530px;
-  right: 55px;
+  right: 35px;
 }
 
-/* line 485, compass/sass/style.scss */
+/* line 503, compass/sass/style.scss */
 .process-6 {
   top: 400px;
-  right: 0px;
+  right: -20px;
 }
 
-/* line 489, compass/sass/style.scss */
+/* line 505, compass/sass/style.scss */
+.process-tab {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+/* line 510, compass/sass/style.scss */
+.process-tab:hover {
+  cursor: pointer;
+}
+/* line 513, compass/sass/style.scss */
+.process-tab img {
+  filter: brightness(103%);
+  width: 100%;
+}
+
+/* line 521, compass/sass/style.scss */
 .active-process img {
   filter: brightness(125%);
-  transform: scale(1.5, 1.5);
+  transform: scale(1.2, 1.2);
   transition: transform 0.3s;
 }
 
-/* line 496, compass/sass/style.scss */
+/* line 528, compass/sass/style.scss */
 .post-content {
   padding: 0 0 40px 0;
 }
 
-/* line 498, compass/sass/style.scss */
+/* line 530, compass/sass/style.scss */
 .process-text .fade-from-left {
   animation: fade-from-left 1s linear;
+  width: 100%;
 }
 
 @keyframes fade-from-left {
