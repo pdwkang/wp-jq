@@ -138,33 +138,37 @@ a {
   padding-left: 0;
   padding-right: 0;
 }
+/* line 163, compass/sass/style.scss */
+.home-slide img {
+  max-width: 100%;
+}
 
-/* line 164, compass/sass/style.scss */
+/* line 167, compass/sass/style.scss */
 .green-wrapper {
   height: 150px;
   background-color: rgba(130, 188, 0, 0.93);
   line-height: 150px;
 }
 
-/* line 170, compass/sass/style.scss */
+/* line 173, compass/sass/style.scss */
 .home-slide-title.green-wrapper {
   font-size: 36px;
 }
 
 /* owl carousel css */
-/* line 175, compass/sass/style.scss */
+/* line 178, compass/sass/style.scss */
 .separator span {
   display: none !important;
 }
 
-/* line 179, compass/sass/style.scss */
+/* line 182, compass/sass/style.scss */
 .services.carousel.owl-carousel.owl-theme.owl-loaded {
   width: 100%;
   /* margin: 0; */
   /* padding: 0; */
 }
 
-/* line 185, compass/sass/style.scss */
+/* line 188, compass/sass/style.scss */
 #services .container {
   padding: 0 !important;
   margin: 0 !important;
@@ -172,18 +176,18 @@ a {
   max-width: 100%;
 }
 
-/* line 192, compass/sass/style.scss */
+/* line 195, compass/sass/style.scss */
 .owl-stage-outer {
   width: 100%;
 }
 
-/* line 195, compass/sass/style.scss */
+/* line 198, compass/sass/style.scss */
 .home-slide:after {
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 /* social media links */
-/* line 206, compass/sass/style.scss */
+/* line 209, compass/sass/style.scss */
 .twitter-title {
   margin-bottom: 100px;
   background-color: rgba(130, 188, 0, 0.93);
@@ -191,7 +195,7 @@ a {
   line-height: 140px;
 }
 
-/* line 212, compass/sass/style.scss */
+/* line 215, compass/sass/style.scss */
 .each-logo1 {
   margin-top: 100px;
   width: 80px;
@@ -200,36 +204,36 @@ a {
   margin-bottom: 50px;
 }
 
-/* line 219, compass/sass/style.scss */
+/* line 222, compass/sass/style.scss */
 .each-logo1:hover {
   filter: brightness(30%);
   transition: filter 0.3s;
 }
 
-/* line 224, compass/sass/style.scss */
+/* line 227, compass/sass/style.scss */
 .aa {
   animation: bounceIcons 1.2s infinite linear;
 }
 
-/* line 225, compass/sass/style.scss */
+/* line 228, compass/sass/style.scss */
 .bb {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .1s;
 }
 
-/* line 226, compass/sass/style.scss */
+/* line 229, compass/sass/style.scss */
 .cc {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .2s;
 }
 
-/* line 227, compass/sass/style.scss */
+/* line 230, compass/sass/style.scss */
 .dd {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .3s;
 }
 
-/* line 228, compass/sass/style.scss */
+/* line 231, compass/sass/style.scss */
 .ee {
   animation: bounceIcons 1.2s infinite linear;
   animation-delay: .4s;
@@ -250,24 +254,24 @@ a {
   }
 }
 /* client css */
-/* line 241, compass/sass/style.scss */
+/* line 244, compass/sass/style.scss */
 .client-entire-wrapper {
   margin-top: 50px;
 }
 
-/* line 242, compass/sass/style.scss */
+/* line 245, compass/sass/style.scss */
 .client-wrapper {
   margin: auto;
   text-align: center;
 }
 
-/* line 246, compass/sass/style.scss */
+/* line 249, compass/sass/style.scss */
 .each-client {
   display: inline-block;
   margin-top: 30px;
 }
 
-/* line 250, compass/sass/style.scss */
+/* line 253, compass/sass/style.scss */
 .client-img {
   padding: 25px;
   height: 200px !important;
@@ -278,7 +282,7 @@ a {
   border: 5px solid #82bc00;
 }
 
-/* line 260, compass/sass/style.scss */
+/* line 263, compass/sass/style.scss */
 .client-img:hover {
   /* // filter:invert(90%); */
   filter: brightness(50%);
@@ -287,12 +291,12 @@ a {
 }
 
 /* contact css */
-/* line 276, compass/sass/style.scss */
+/* line 279, compass/sass/style.scss */
 #contact .container {
   max-width: 100%;
 }
 
-/* line 279, compass/sass/style.scss */
+/* line 282, compass/sass/style.scss */
 #contact .container .section-content {
   /* position: absolute; */
   display: inline-block;
@@ -302,7 +306,7 @@ a {
   /* top: 100px; */
 }
 
-/* line 287, compass/sass/style.scss */
+/* line 290, compass/sass/style.scss */
 .contact_map {
   /* position: absolute; */
   display: inline-block;
@@ -313,28 +317,28 @@ a {
   /* top: 100px; */
 }
 
-/* line 296, compass/sass/style.scss */
+/* line 299, compass/sass/style.scss */
 #map-canvas {
   height: 543px !important;
 }
 
-/* line 300, compass/sass/style.scss */
+/* line 303, compass/sass/style.scss */
 #contact .contact-form-inputs-col {
   width: 100% !important;
 }
 
-/* line 303, compass/sass/style.scss */
+/* line 306, compass/sass/style.scss */
 #contact .contact-form-inputs-col.contact-form-inputs-col-2 {
   padding-left: 0 !important;
   padding-right: 10px !important;
 }
 
-/* line 307, compass/sass/style.scss */
+/* line 310, compass/sass/style.scss */
 #contact .section-description {
   margin-bottom: 50px !important;
 }
 
-/* line 310, compass/sass/style.scss */
+/* line 313, compass/sass/style.scss */
 #mtscontact_form {
   margin-top: -10px !important;
 }
@@ -344,14 +348,14 @@ a {
 /* background-color:rgba(100,200,100,.7); */
 /* width: 50%; */
 /* } */
-/* line 329, compass/sass/style.scss */
+/* line 332, compass/sass/style.scss */
 #introduction {
   position: relative;
   overflow: hidden;
   height: 50vh;
 }
 
-/* line 334, compass/sass/style.scss */
+/* line 337, compass/sass/style.scss */
 .philosophy-green {
   position: absolute;
   top: 0;
@@ -366,42 +370,42 @@ a {
 }
 
 /* Values */
-/* line 350, compass/sass/style.scss */
+/* line 353, compass/sass/style.scss */
 .img-container {
   border-radius: 0;
 }
 
-/* line 353, compass/sass/style.scss */
+/* line 356, compass/sass/style.scss */
 .owl-lazy {
   border: 5px solid rgba(130, 188, 0, 0.93);
   padding: 4px;
 }
 
-/* line 357, compass/sass/style.scss */
+/* line 360, compass/sass/style.scss */
 #introduction .section-description, #introduction .section-title {
   color: transparent;
 }
 
-/* line 361, compass/sass/style.scss */
+/* line 364, compass/sass/style.scss */
 #services .grid-box-inner {
   padding: 50px 25px 40px 25px;
 }
 
-/* line 364, compass/sass/style.scss */
+/* line 367, compass/sass/style.scss */
 #services .grid-box-inner:hover {
   background-color: rgba(130, 188, 0, 0.4);
   color: black;
 }
 
 /* Contact Page */
-/* line 381, compass/sass/style.scss */
+/* line 384, compass/sass/style.scss */
 .contact-wrapperz {
   position: relative;
   width: 100%;
   min-height: 1400px;
 }
 
-/* line 386, compass/sass/style.scss */
+/* line 389, compass/sass/style.scss */
 .contact-left {
   position: absolute;
   top: 80px;
@@ -410,7 +414,7 @@ a {
   display: inline-block;
 }
 
-/* line 393, compass/sass/style.scss */
+/* line 396, compass/sass/style.scss */
 .contact-right {
   position: absolute;
   vertical-align: top;
@@ -422,7 +426,7 @@ a {
 }
 
 /* Service Page */
-/* line 407, compass/sass/style.scss */
+/* line 410, compass/sass/style.scss */
 .each-service-wrapper {
   width: 100%;
   position: relative;
@@ -430,13 +434,13 @@ a {
   overflow: hidden;
 }
 
-/* line 414, compass/sass/style.scss */
+/* line 417, compass/sass/style.scss */
 #post-244 .post-content {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 419, compass/sass/style.scss */
+/* line 422, compass/sass/style.scss */
 .service-text-left {
   position: absolute;
   left: 100px;
@@ -447,7 +451,7 @@ a {
   color: white;
 }
 
-/* line 428, compass/sass/style.scss */
+/* line 431, compass/sass/style.scss */
 .service-text-right {
   position: absolute;
   right: 100px;
@@ -459,7 +463,7 @@ a {
 }
 
 /* Process Page */
-/* line 441, compass/sass/style.scss */
+/* line 444, compass/sass/style.scss */
 .process-wrapper {
   width: 800px;
   height: 700px;
@@ -467,7 +471,7 @@ a {
   margin: auto;
 }
 
-/* line 449, compass/sass/style.scss */
+/* line 452, compass/sass/style.scss */
 .process-image-background {
   position: absolute;
   width: 600px;
@@ -476,12 +480,12 @@ a {
   left: 100px;
   top: 50px;
 }
-/* line 456, compass/sass/style.scss */
+/* line 459, compass/sass/style.scss */
 .process-image-background img {
   filter: brightness(125%);
 }
 
-/* line 459, compass/sass/style.scss */
+/* line 462, compass/sass/style.scss */
 .process-text {
   position: absolute;
   text-align: center;
@@ -489,128 +493,128 @@ a {
   left: 0;
   width: 100%;
 }
-/* line 465, compass/sass/style.scss */
+/* line 468, compass/sass/style.scss */
 .process-text .process-actual-text {
   color: #282828;
 }
-/* line 469, compass/sass/style.scss */
+/* line 472, compass/sass/style.scss */
 .process-text .process1-text .process-text-title {
   padding: 40px 0 0 50px;
 }
-/* line 470, compass/sass/style.scss */
+/* line 473, compass/sass/style.scss */
 .process-text .process1-text .process-actual-text {
   padding: 10px 80px 0px 140px;
 }
-/* line 473, compass/sass/style.scss */
+/* line 476, compass/sass/style.scss */
 .process-text .process2-text .process-text-title {
   padding: 5px 0 0 30px;
 }
-/* line 474, compass/sass/style.scss */
+/* line 477, compass/sass/style.scss */
 .process-text .process2-text .process-actual-text {
   padding: 10px 90px 0px 140px;
 }
-/* line 477, compass/sass/style.scss */
+/* line 480, compass/sass/style.scss */
 .process-text .process3-text .process-text-title {
   padding: 30px 0 0 30px;
 }
-/* line 478, compass/sass/style.scss */
+/* line 481, compass/sass/style.scss */
 .process-text .process3-text .process-actual-text {
   padding: 10px 100px 0px 130px;
 }
-/* line 481, compass/sass/style.scss */
+/* line 484, compass/sass/style.scss */
 .process-text .process4-text .process-text-title {
   padding: 20px 40px 0 0;
 }
-/* line 482, compass/sass/style.scss */
+/* line 485, compass/sass/style.scss */
 .process-text .process4-text .process-actual-text {
   padding: 10px 140px 0px 100px;
 }
-/* line 485, compass/sass/style.scss */
+/* line 488, compass/sass/style.scss */
 .process-text .process5-text .process-text-title {
   padding: 10px 50px 0 0;
 }
-/* line 486, compass/sass/style.scss */
+/* line 489, compass/sass/style.scss */
 .process-text .process5-text .process-actual-text {
   padding: 10px 150px 0px 95px;
 }
-/* line 489, compass/sass/style.scss */
+/* line 492, compass/sass/style.scss */
 .process-text .process6-text .process-text-title {
   padding: 50px 50px 0 0;
 }
-/* line 490, compass/sass/style.scss */
+/* line 493, compass/sass/style.scss */
 .process-text .process6-text .process-actual-text {
   padding: 10px 150px 0px 90px;
 }
-/* line 492, compass/sass/style.scss */
+/* line 495, compass/sass/style.scss */
 .process-text img {
   margin-top: -100px;
 }
 
-/* line 498, compass/sass/style.scss */
+/* line 501, compass/sass/style.scss */
 .process-1 {
   top: 400px;
   left: 10px;
 }
 
-/* line 499, compass/sass/style.scss */
+/* line 502, compass/sass/style.scss */
 .process-2 {
   top: 530px;
   left: 70px;
 }
 
-/* line 500, compass/sass/style.scss */
+/* line 503, compass/sass/style.scss */
 .process-3 {
   top: 630px;
   left: 200px;
 }
 
-/* line 501, compass/sass/style.scss */
+/* line 504, compass/sass/style.scss */
 .process-4 {
   top: 630px;
   right: 160px;
 }
 
-/* line 502, compass/sass/style.scss */
+/* line 505, compass/sass/style.scss */
 .process-5 {
   top: 530px;
   right: 35px;
 }
 
-/* line 503, compass/sass/style.scss */
+/* line 506, compass/sass/style.scss */
 .process-6 {
   top: 400px;
   right: -20px;
 }
 
-/* line 505, compass/sass/style.scss */
+/* line 508, compass/sass/style.scss */
 .process-tab {
   position: absolute;
   width: 100px;
   height: 100px;
 }
-/* line 510, compass/sass/style.scss */
+/* line 513, compass/sass/style.scss */
 .process-tab:hover {
   cursor: pointer;
 }
-/* line 513, compass/sass/style.scss */
+/* line 516, compass/sass/style.scss */
 .process-tab img {
   filter: brightness(103%);
   width: 100%;
 }
 
-/* line 521, compass/sass/style.scss */
+/* line 524, compass/sass/style.scss */
 .active-process img {
   filter: brightness(125%);
   transform: scale(1.2, 1.2);
   transition: transform 0.3s;
 }
 
-/* line 528, compass/sass/style.scss */
+/* line 531, compass/sass/style.scss */
 .post-content {
   padding: 0 0 40px 0;
 }
 
-/* line 530, compass/sass/style.scss */
+/* line 533, compass/sass/style.scss */
 .process-text .fade-from-left {
   animation: fade-from-left 1s linear;
   width: 100%;
