@@ -3,19 +3,29 @@
 // $my-green1: rgb(154,217,89);
 $my-green1: rgb(130,188,0);
 // $my-green2: rgba(154,217,89,0.93);
-$my-green2: rgba(130,188,0,0.93);
+$my-green2: rgba(130,188,0,0.6);
 // $my-green3: rgba(154,217,89,0.4);
 $my-green3: rgba(130,188,0,0.4);
 // $my-green4: rgb(235,255,235);
 $my-green4: rgb(235,255,235);
+$logo-green: #63C502;
 /* CUSTOM CSS */
-body{
-    padding-left: 7% !important;
-    padding-right: 7% !important;
-    background-color: white;
-    padding-top: 32px;
-    font-family: 'Myriad Pro Light' !important;
+@media (min-width: 867px) {
+	body{
+	    padding-left: 7% !important;
+	    padding-right: 7% !important;
+	    background-color: white;
+	    padding-top: 32px;
+	    font-family: 'Myriad Pro Light' !important;
+	}
+}	
+
+nav a#pull .fa{
+	color:white !important;
+	font-size:25px;
+	text-shadow: 1px 1px rgba(50,50,50,0.5);
 }
+
 h1,h2,h3,h4,h5,h6,a,body{
 	letter-spacing: .5px;
 }
@@ -42,9 +52,9 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	z-index: 1001;
 	position: fixed;
 	left:0;
-	top:40px;
+	top:33px;
 	// width:30vw;
-	width:400px;
+	width:390px;
 	// max-height:140px;
 	
 }
@@ -160,8 +170,11 @@ a{font-family: 'Myriad Pro Regular' !important;}
 .home-slide{
 	padding-left: 0;
 	padding-right: 0;
-	img{
-		width:100%;
+	background-size: 100% !important; 
+}
+@media (max-width: 867px) {
+	#home-slider .owl-stage-outer{
+		max-height:170px
 	}
 }
 .green-wrapper{
@@ -206,6 +219,9 @@ a{font-family: 'Myriad Pro Regular' !important;}
 
 
 /* social media links */
+#twitter{
+	background-repeat:no-repeat !important;
+}
 .twitter-title{
 	margin-bottom: 100px;
 	background-color: $my-green2;
@@ -218,6 +234,16 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	padding-bottom: 7px;
 	margin: 0px 10px;
 	margin-bottom: 50px;
+}
+@media (max-width: 865px) {
+	.each-logo1{
+		width:55px;
+		margin: 0px 5px;
+	}
+	#features{
+		padding-left:5%;
+		padding-right:5%;
+	}
 }
 .each-logo1:hover{
 	filter:brightness(30%);
@@ -336,15 +362,48 @@ a{font-family: 'Myriad Pro Regular' !important;}
 }
 .philosophy-green{
 	position: absolute;
-	top: 0;
+	top: -100px;
 	left: 0; 
   	right: 0; 
   	margin-left: auto; 
   	margin-right: auto;
 	height: 100vh;
 	background-color: $my-green2;
-	width: 400px;
-	font-size: 30px;
+	width: 500px;
+	transform:rotate(10deg);
+	// font-size: 28px;
+	color:white;
+	.phil-rotate-text{
+		transform:rotate(-10deg);
+	}
+	h3{
+		color:white;
+		font-size: 30px;
+		margin-top:150px;
+	}
+	.philosophy-text{
+		margin-left:30px;
+		margin-top: -10px;
+		line-height: 40px;
+		font-size: 24px;
+		text-align: left;
+		font-family: "Myriad Pro Regular";
+	}
+}
+
+
+@media (max-width: 600px) {
+	.philosophy-green{
+		width:auto;
+		transform:none;
+		.philosophy-text{
+			font-size:17px;
+			margin-left: 15px;
+		}
+		.phil-rotate-text{
+			transform:none;
+		}
+	}
 }
 
 
@@ -354,7 +413,7 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	border-radius: 0;
 }
 .owl-lazy{
-	border: 5px solid $my-green2;
+	border: 5px solid #63C502;
 	padding: 4px;
 }
 #introduction .section-description, #introduction .section-title{
@@ -410,8 +469,11 @@ a{font-family: 'Myriad Pro Regular' !important;}
 .each-service-wrapper{
 	width:100%;
 	position: relative;
-	height:400px;
+	max-height:400px;
 	overflow: hidden;
+	margin-bottom:5vh;
+	// border: 5px solid $my-green2;
+	// transform:rotate(-5deg)
 }
 
 #post-244 .post-content{
@@ -421,21 +483,39 @@ a{font-family: 'Myriad Pro Regular' !important;}
 
 .service-text-left{
 	position: absolute;
-	left:100px;
+	left:5vw;
 	top:0;
-	height:400px;
+	height:98%;
 	width:280px;
-	background-color: $my-green2;
+	background: linear-gradient(to bottom, rgba(130,188,0,.7) 0%, rgba(130,188,0,0.6) 100%);
 	color:white;
+
 }
 .service-text-right{
 	position: absolute;
-	right:100px;
+	right:5vw;
 	top:0;
-	height:400px;
+	height:98%;
 	width:280px;
-	background-color: $my-green2;
+	background: linear-gradient(to bottom, rgba(130,188,0,.7) 0%, rgba(130,188,0,0.6) 100%);
 	color:white;
+}
+
+// $my-green2: rgba(130,188,0,0.93);
+
+
+@media (max-width: 600px) {
+	.service-text-left, .service-text-right{
+		height:93%;
+		.home-slide{margin-top:100px}
+	}
+}
+
+@media (min-width: 1300px) {
+	.service-text-left, .service-text-right{
+		height:100%;
+		.home-slide{margin-top:100px}
+	}
 }
 
 
@@ -498,9 +578,9 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	}
 }
 
-.process-1{top: 400px;left: 10px;}
-.process-2{top: 530px;left: 70px;}
-.process-3{top: 630px;left: 200px;}
+.process-1{top: 400px;left: -10px;}
+.process-2{top: 530px;left: 60px;}
+.process-3{top: 630px;left: 180px;}
 .process-4{top: 630px;right: 160px;}
 .process-5{top: 530px;right: 35px;}
 .process-6{top: 400px;right: -20px;}
@@ -543,3 +623,8 @@ a{font-family: 'Myriad Pro Regular' !important;}
 		margin-left:0px;
 	}
 }
+
+
+// Breadcrum
+.breadcrumb{text-align: right; padding-top:10px;}
+.header-search{display:none;}
