@@ -54,9 +54,9 @@ jQuery(document).ready(function() {
 	clientHTML += '<div class="client-entire-wrapper">'
 		clientHTML += '<h3 class="section-title">BRANDS WE WORKED WITH</h3>'
 		clientHTML += "<div class='client-wrapper'>"
-			clientHTML += "<div class='each-client'> <a target='_blank' href='http://mellowmushroom.com/'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/mellowMushroom.jpg'/> </a></div>"
+			clientHTML += "<div class='each-client'> <a target='_blank' href='http://mellowmushroom.com/'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-mushroom.jpg'/> </a></div>"
 			clientHTML += "<div class='each-client'> <a href='http://www.michelinman.com/US/en/homepage.html' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/michelin.jpg' /> </a></div>"
-			clientHTML += "<div class='each-client'> <a href='http://northpoint.org/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/church.jpg'/> </a></div>"
+			clientHTML += "<div class='each-client'> <a href='http://northpoint.org/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-northpoint.png'/> </a></div>"
 			clientHTML += "<div class='each-client'> <a href='http://jcbc.org/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-johns-creek.png'/> </a></div>"
 			// clientHTML += "<div class='each-client'> <a href='http://www.chestnutridgechurch.com/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-chestnut-ridge.png'/> </a></div>"
 			clientHTML += "<div class='each-client'> <a href='http://www.firstredeemer.org' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-first-redeemer.jpg'/> </a></div>"
@@ -64,6 +64,8 @@ jQuery(document).ready(function() {
 			clientHTML += "<div class='each-client'> <a href='http://theorangeconference.com/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-orange.jpg'/> </a></div>"
 			clientHTML += "<div class='each-client'> <a href='http://truenorthchurch.com/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-true-north.png'/> </a></div>"
 			clientHTML += "<div class='each-client'> <a href='http://northstarchurch.org/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-north-star.jpg'/> </a></div>"
+			clientHTML += "<div class='each-client'> <a href='https://www.calvaryftl.org' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-calvary.png'/> </a></div>"
+			clientHTML += "<div class='each-client'> <a href='https://www.kcpc.org/' target='_blank'><img class='client-img' src='/wp-content/themes/IronSpirits2/images/client-kcpc.png'/> </a></div>"
 		clientHTML += '</div>'
 	clientHTML += '</div>'
     jQuery('#clients').html(clientHTML);

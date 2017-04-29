@@ -31,9 +31,15 @@ body{
 	.js {
 	    margin-top: 0px !important;
 	}
+	.single#page{
+		padding-top:0 !important;
+	}
 }
 #pull{
-	line-height: auto;
+	position: absolute !important;;
+	top:-80px!important;;
+	left:-20px!important;;
+	font-size: 30px !important;;
 }
 a:hover{
 	color:$logo-green !important;
@@ -63,7 +69,16 @@ a{font-family: 'Myriad Pro Regular' !important;}
 #logo{
 	display: none !important; 
 }
+@media (max-width: 867px){
+	.wp-image-850{
+		display: none !important;
+	}
+	#post-679, #post-235{
+		padding-left:7%;
+		padding-right:7%;
+	}
 
+}
 // real logo
 .logo-image-wrapper{
 	/* display: none; */
@@ -107,7 +122,7 @@ a{font-family: 'Myriad Pro Regular' !important;}
 		// width:100%;
 		// max-height:140px;
 		// border-radius: 50%;
-		padding:0 50px 20px 50px;
+		padding:0 50px 0px 50px;
 	}
 // }
 @media (min-width: 867px) {
@@ -130,8 +145,8 @@ a{font-family: 'Myriad Pro Regular' !important;}
 		margin:auto;
 		margin-top:7px;
 		.logo-image{
-			width:80%;
-			padding:0;
+			width:100%;
+			// padding-left:10%;
 		}
 	}
 }
@@ -185,6 +200,11 @@ a{font-family: 'Myriad Pro Regular' !important;}
 //////////////////////
 ////// FEATURES //////
 //////////////////////
+@media (max-width: 866px) {
+	#features .grid-box, .separator, .section-header{
+		margin-bottom: 20px !important;
+	}
+}
 .features-logo{
 	display: inline-block;
 	width:50px;
@@ -294,19 +314,54 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	opacity: .75;
 }
 
-.aa{animation: bounceIcons 1.2s infinite linear; }
-.bb{animation: bounceIcons 1.2s infinite linear;animation-delay: .1s;}
-.cc{animation: bounceIcons 1.2s infinite linear;animation-delay: .2s;}
-.dd{animation: bounceIcons 1.2s infinite linear;animation-delay: .3s;}
-.ee{animation: bounceIcons 1.2s infinite linear;animation-delay: .4s;}
-
-@keyframes bounceIcons{
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-15px);}
-	60% {transform: translateY(-7px);}
-	90%{transform: translateY(-3px);}
+.aa{animation: bounceIconsA 1.2s infinite linear; }
+.bb{animation: bounceIconsB 1.2s infinite linear;
+	// -webkit-animation-delay: -.1s;
+	// animation-delay: -.1s;
+}
+.cc{animation: bounceIconsC 1.2s infinite linear;
+	// -webkit-animation-delay: -.2s;
+	// animation-delay: -.2s;
+}
+.dd{animation: bounceIconsD 1.2s infinite linear;
+	// -webkit-animation-delay: -.3s;
+	// animation-delay: -.3s;
+}
+.ee{animation: bounceIconsE 1.2s infinite linear;
+	// -webkit-animation-delay: -.4s;
+	// animation-delay: -.4s;
 }
 
+@keyframes bounceIconsA{
+	0%, 20%, 40%, 60%, 100% {transform: translateY(0);}
+	10% {transform: translateY(-15px);}
+	30% {transform: translateY(-7px);}
+	50%{transform: translateY(-3px);}
+}
+@keyframes bounceIconsB{
+	0%, 30%, 50%, 80%, 100% {transform: translateY(0);}
+	20% {transform: translateY(-15px);}
+	40% {transform: translateY(-7px);}
+	60%{transform: translateY(-3px);}
+}
+@keyframes bounceIconsC{
+	0%, 20%, 40%, 60%, 100% {transform: translateY(0);}
+	30% {transform: translateY(-15px);}
+	50% {transform: translateY(-7px);}
+	70%{transform: translateY(-3px);}
+}
+@keyframes bounceIconsD{
+	0%, 30%, 50%, 70%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-15px);}
+	60% {transform: translateY(-7px);}
+	80%{transform: translateY(-3px);}
+}
+@keyframes bounceIconsE{
+	0%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+	50% {transform: translateY(-15px);}
+	70% {transform: translateY(-7px);}
+	90%{transform: translateY(-3px);}
+}
 
 
 
@@ -316,7 +371,7 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	margin: auto;
 	text-align: center;
 	padding-top:50px;
-	max-width: 1050px;
+	max-width: 1150px;
 }
 .each-client{
 	display: inline-block;
@@ -327,10 +382,11 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	padding:15px;
 	height:150px !important;
 	width:150px !important;
-	margin: 20px;
+	margin: 15px;
 	background-color:white;
 	border: 7px solid $logo-green;
 }
+
 .client-img:hover{
 	/* // filter:invert(90%); */
 	filter:brightness(70%);
@@ -341,7 +397,13 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	transition:padding 0.4s;
 	// transition:filter 0.4s;
 }
-
+@media (max-width: 600px) {
+	.client-img{ 
+		width:140px !important;
+		margin:15px;
+		height:140px !important;
+	}
+}
 
 
 
@@ -381,7 +443,7 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	padding-left: 0 !important;
 	padding-right: 10px !important;
 }
-#contact .section-description{
+#contact .section-description,{
 	margin-bottom: 50px !important;
 }
 #mtscontact_form{
@@ -407,6 +469,12 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	position: relative;
 	overflow: hidden;
 	height: 50vh;
+
+}
+@media (max-width: 600px) { 
+	#introduction{ 
+		margin-top: 30px
+	}
 }
 .philosophy-green{
 	position: absolute;
@@ -430,11 +498,12 @@ a{font-family: 'Myriad Pro Regular' !important;}
 		margin-top:130px;
 	}
 	.philosophy-text{
-		margin-left:40px;
+		width:100%;
+		// margin-left:40px;
 		margin-top: -30px;
 		line-height: 40px;
 		font-size: 24px;
-		text-align: left;
+		text-align: center;
 		font-family: "Myriad Pro Regular";
 	}
 }
@@ -446,7 +515,9 @@ a{font-family: 'Myriad Pro Regular' !important;}
 		background-color: transparent;
 		.philosophy-text{
 			font-size:17px;
-			margin-left: 15px;
+			// margin-left: 15px;
+			text-align: center;
+
 		}
 		.phil-rotate-text{
 			transform:none;
@@ -477,6 +548,9 @@ a{font-family: 'Myriad Pro Regular' !important;}
 }
 
 
+.project-caption-inner{
+	display: block !important;
+}
 //////////////////////////////
 //// front page ends here ////----
 //////////////////////////////
@@ -493,31 +567,41 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	width: 100%;
 	min-height: 1300px;
 }
-@media (max-width: 600px) {
-	.contact-left, .contact-right{
-		width:100%;
-		top:15px;
-		left:0;
+
+@media (min-width: 866px) {
+	.contact-left{
+		position: absolute;
+		top: 15px;
+		left: 0.5%;
+		width: 49%;
+		display: inline-block;
+	}
+	.contact-right{
+		position: absolute;
+		vertical-align: top;
+		// padding-top: 50px;
+		top: 15px;
+		left: 50.5%;
+		width: 49%;
+		display: inline-block;
 	}
 }
-.contact-left{
-	position: absolute;
-	top: 15px;
-	left: 0.5%;
-	width: 49%;
-	display: inline-block;
+@media (max-width: 865px) {
+	.contact-wrapperz{
+		padding-left:7%;
+		padding-right:7%;
+	}
+	.contact-left, .contact-right{
+		width:100%;
+		position: relative;
+	}
 }
-.contact-right{
-	position: absolute;
-	vertical-align: top;
-	// padding-top: 50px;
-	top: 15px;
-	left: 50.5%;
-	width: 49%;
-	display: inline-block;
+.gallery-item .gallery-caption, .project-box-inner .project-caption{
+	opacity: 1 !important;
 }
-
-
+.gallery-item:hover .project-box-inner:hover{
+	opacity: .9 !important;
+}
 
 
 /* Service Page */
@@ -525,7 +609,7 @@ a{font-family: 'Myriad Pro Regular' !important;}
 	width:100%;
 	position: relative;
 	max-height:400px;
-	min-height:280px;
+	min-height:330px;
 	overflow: hidden;
 	margin-bottom:5vh;
 	// border-right:10px solid $logo-green;
@@ -702,28 +786,28 @@ a{font-family: 'Myriad Pro Regular' !important;}
 		color:rgb(40,40,40);
 	}
 	.process1-text{
-		.process-text-title{padding:40px 0 0 50px;}
+		.process-text-title{padding:50px 0 0 50px;}
 		.process-actual-text{padding:10px 80px 0px 140px;}
 	}
 	.process2-text{
-		.process-text-title{padding:25px 0 0 30px;}
+		.process-text-title{padding:33px 0 0 30px;}
 		.process-actual-text{padding:10px 90px 0px 140px;}
 	}
 	.process3-text{
-		.process-text-title{padding:30px 0 0 30px;}
-		.process-actual-text{padding:10px 100px 0px 130px;}
+		.process-text-title{padding:22px 0 0 30px;}
+		.process-actual-text{padding:10px 110px 0px 146px;}
 	}	
 	.process4-text{
-		.process-text-title{padding:20px 40px 0 0;}
-		.process-actual-text{padding:10px 140px 0px 100px;}
+		.process-text-title{padding:30px 40px 0 0;}
+		.process-actual-text{padding:4px 140px 0px 100px;}
 	}	
 	.process5-text{
 		.process-text-title{padding:40px 50px 0 0;}
-		.process-actual-text{padding:10px 150px 0px 95px;}
+		.process-actual-text{padding:10px 140px 0px 95px;}
 	}				
 	.process6-text{
-		.process-text-title{padding:50px 50px 0 0;}
-		.process-actual-text{padding:10px 150px 0px 90px;}
+		.process-text-title{padding:60px 50px 0 0;}
+		.process-actual-text{padding:10px 150px 0px 85px;}
 	}									
 	img{
 		margin-top:-100px;
@@ -786,4 +870,33 @@ a{font-family: 'Myriad Pro Regular' !important;}
 #post-398 .post-content{
 	padding-left: 7%;
 	padding-right: 7%;
+}
+
+
+// Testimonial page
+.testimonial-1{
+	font-size: 16px;
+	color:black;
+	font-family: "Myriad Pro Regular";
+	line-height: 240%;
+	margin-bottom: 10px;
+}
+.testimonial-2{
+	font-size: 17px;
+	color:rgb(120,120,120);
+	font-family: "Myriad Pro Bold";
+	line-height: 240%;
+}
+.testimonial-3{
+	font-size: 16px;
+	color:rgb(150,150,150);
+	font-family: "Myriad Pro Regular";
+	line-height: 220%;
+}
+.testimonial-4{
+	font-size: 15px;
+	color:rgb(150,150,150);
+	font-family: "Myriad Pro Regular";
+	line-height: 220%;
+	margin-bottom:80px;
 }
